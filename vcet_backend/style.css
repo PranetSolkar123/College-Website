@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #0B3C5D;
+  color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00d4ff;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background: url('images/campus.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  padding: 40px;
+  border-radius: 10px;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.overlay h1 {
+  font-size: 48px;
+}
+
+.overlay p {
+  margin: 15px 0;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #00d4ff;
+  color: black;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* Mobile */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.logo span {
+  color: #00d4ff;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 20px;
+  background: #f5f7fa;
+  text-align: center;
+}
+
+.stat h2 {
+  font-size: 40px;
+  color: #0B3C5D;
+}
+
+.stat p {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.departments {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.departments h2 {
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.dept-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #0B3C5D;
+  color: white;
+  padding: 40px;
+  width: 220px;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: #00d4ff;
+  color: black;
+}
